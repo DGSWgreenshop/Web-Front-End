@@ -7,7 +7,7 @@ const FundingCard = () => {
     const imageUrl = Eximg.src;
 
     return (
-        <div className={`w-[300px] h-[230px] bg-white mt-[20px] rounded-md relative overflow-hidden mb-[110px]`}
+        <div className={`w-[300px] h-[230px] bg-white mt-[20px] rounded-md relative overflow-hidden]`}
              style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className={`absolute bottom-0 left-0 w-full h-[100px] bg-black bg-opacity-50 p-4`}>
                 <h1 className="text-white text-[18px] font-bold">갈 곳 없는 폐비닐로 업사이클링...</h1>

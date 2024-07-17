@@ -6,7 +6,7 @@ import FundingCard from './FundingCard';
 
 const FundingSlideCard = () => {
     return (
-        <div>
+        <div className={`mb-[110px]`}>
             <Swiper
                 slidesPerView={3} // Swiper의 너비를 이미지와 동일하게 설정
                 style={{ width: '925px' }}
