@@ -7,9 +7,9 @@ const BottomTab = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <div className={`mt-[30px] flex justify-center items-center mb-[20px]`}>
-            <div className={`w-[90vw] h-[65px] bg-gray-500 rounded-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100`}>
-                <div className={`flex w-full h-full justify-center gap-[10px] items-center`}>
+        <div className={`fixed bottom-[4px] mt-[30px] flex justify-center items-center mb-[20px] z-50`}>
+            <div className={`w-[90vw] h-[65px] bg-[#D8D8D8] rounded-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40`}>
+                <div className={`flex w-full h-full justify-center gap-[13px] items-center`}>
                     {[0, 1, 2, 3, 4].map((index) => (
                         <CircleTab
                             key={index}

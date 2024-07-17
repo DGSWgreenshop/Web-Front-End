@@ -20,24 +20,25 @@ const Home = () => {
             </div>
             <SlideCard/>
             <div className={`flex flex-col pl-[40px] pr-[40px]`}>
-                <div className={`flex justify-between`}>
+                <div className={`flex justify-between items-center`}>
                     <h1 className={`text-start mt-[20px] text-3xl text-white font-semibold`}>인기 상품</h1>
-                    <h2 className={`text-end mt-[20px] text-md text-white font-semibold self-end`}>더보기</h2>
+                    <h2 className={`text-end mt-[20px] text-md text-white font-medium self-center`}>더보기</h2>
                 </div>
                 <div className={`flex justify-center items-center mt-[20px]`}>
                 <ProdSlideCard />
                 </div>
             </div>
             <div className={`flex flex-col pl-[40px] pr-[40px]`}>
-                <div className={`flex justify-between`}>
+                <div className={`flex justify-between items-center`}>
                     <h1 className={`text-start mt-[40px] text-3xl text-white font-semibold`}>진행중인 펀딩</h1>
-                    <h2 className={`text-end mt-[40px] text-md text-white font-semibold self-end`}>더보기</h2>
+                    <Link href={'/'}>
+                        <h2 className={`text-end mt-[40px] text-md text-white font-medium self-center`}>더보기</h2>
+                    </Link>
                 </div>
                 <div className={`flex justify-center items-center`}>
                    <FundingSlideCard />
                 </div>
             </div>
-            <BottomTab/>
         </div>
     )
 }

@@ -20,6 +20,9 @@ export default function RootLayout({
     <body className={inter.className}>
     <div className={`bg-black overflow-x-hidden`}>
       {children}
+      <div className={'flex justify-center items-center'}>
+        <BottomTab />
+      </div>
     </div>
     </body>
     </html>
