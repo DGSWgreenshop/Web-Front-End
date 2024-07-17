@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
+import BottomTab from "@/app/components/BottomTab";
 
 const inter = Inter({ subsets: ["latin"] });
 
