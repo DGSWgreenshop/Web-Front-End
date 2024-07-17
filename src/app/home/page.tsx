@@ -8,6 +8,25 @@ import FundingSlideCard from "@/app/components/FundingSlideCard";
 import Image from "next/image";
 import Link from "next/link";
 import G from '../../../public/Images/G@1x.png'
+import cap1 from "../../../public/Images/cap1.png";
+import cap2 from "../../../public/Images/cap2.png";
+import cap3 from "../../../public/Images/cap3.png";
+import cap4 from "../../../public/Images/cap4.png";
+
+const data = [
+    {
+        image: cap1
+    },
+    {
+        image: cap2
+    },
+    {
+        image: cap3
+    },
+    {
+        image: cap4
+    },
+];
 
 const Home = () => {
     return (
@@ -25,7 +44,7 @@ const Home = () => {
                     <h2 className={`text-end mt-[20px] text-md text-white font-semibold self-end`}>더보기</h2>
                 </div>
                 <div className={`flex justify-center items-center mt-[20px]`}>
-                <ProdSlideCard />
+                <ProdSlideCard data={data} />
                 </div>
             </div>
             <div className={`flex flex-col pl-[40px] pr-[40px]`}>
@@ -37,7 +56,6 @@ const Home = () => {
                    <FundingSlideCard />
                 </div>
             </div>
-            <BottomTab/>
         </div>
     )
 }

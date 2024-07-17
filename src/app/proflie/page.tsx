@@ -4,7 +4,7 @@ import Image from 'next/image';
 import bg1 from '../../../public/Images/bg1.png';
 import Item from '../components/Item';
 
-const Page = () => {
+const Profile = () => {
     // 장바구니 항목들
     const items = [
         { src: bg1, price: 300, title: '다회용 그릇', mount: 1, description: '50만명이 사용한 트래쉬 버스터즈와 함께한 다회용 그릇입니다!', tags: ["dff", "asfd"] },
@@ -23,7 +23,7 @@ const Page = () => {
                 <div className='w-[300px] h-[400px] bg-[#212121] rounded-md px-4 mb-48 flex flex-col justify-between'>
                     <div>
                         {items.map((item, index) => (
-                            <Item 
+                            <Item
                                 key={index}
                                 src={item.src}
                                 price={item.price}
@@ -41,10 +41,10 @@ const Page = () => {
 
                 </div>
 
-                
+
             </div>
         </div>
     );
 };
 
-export default Page;
+export default Profile;
